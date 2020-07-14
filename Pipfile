@@ -1,0 +1,21 @@
+[packages]
+jsonschema = ">=2.6.*"
+requests = "==2.22.*"
+web3 = "==5.0.*"
+ipfsapi = "*"
+pandas = "*"
+python-dateutil = "*"
+pytz = "*"
+py-solc = "*"
+
+[dev-packages]
+black = "*"
+mypy = "*"
+responses = "*"
+isort = "*"
+
+[pipenv]
+allow_prereleases = true
+
+[requires]
+python_version = "3.8"
