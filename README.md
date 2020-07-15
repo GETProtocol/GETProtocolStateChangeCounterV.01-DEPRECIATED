@@ -30,9 +30,13 @@ Activate the venv
 ``` 
 $ source venv/bin/activate
 ```
-To properly manage all required package we use pipenv. Install all requirements:
-``` 
+To properly manage all required package we use pipenv which should be installed:
+```
 $ pip install pipenv
+``` 
+Now pipenv is installed, it can be used to install all requirements:
+``` 
+$ pipenv install
 ```
 Done. You are ready to use the counter!
 
@@ -50,12 +54,12 @@ $ python import_IPFS.py --startheight=10328066 --stopheight=10338066
 
 Medium execution time(300k blocks -> 18 minutes) 
 ```
-python import_IPFS.py --startheight=10038066 --stopheight=10338066 
+$ python import_IPFS.py --startheight=10038066 --stopheight=10338066 
 ```
 
 Long execution time(600k blocks -> 20-40 minutes): 
 ```
-python import_IPFS.py --startheight=9743576 --stopheight=10338066
+$ python import_IPFS.py --startheight=9743576 --stopheight=10338066
 ```
 
 #### Usage (Docker)
