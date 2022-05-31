@@ -1,7 +1,9 @@
-# GET Protocol state change counter 
+# GET Protocol state change counter - DEPRECIATED
 Integrators of the GET Protocol(ticketing companies) are required to use GET as fuel in order to use the features. This tool allows the community to track the usage of GET by statechange usage in the past. 
 
 This script this repo queries the GET Protocol anchoring contract between provided blockheights. All the IPFS batches found will be extracted/downloaded and stored to a pandas dataframe. After the last batch in the blockheight range has been extracted from IPFS the dataframes will be stored in a .csv file. 
+
+**Note: Before the GET Protocol moved to ERC721 tickets we used 'ticket proofs' pinned on IPFS, with the IPFS pointer published on the Ethereum blockchain. This method of smart ticket registration spanned 2018-2020. It has long since been depreciated. This repo contains the code that was used to verify the published state (like a ZK-proof). Due to its 'age' it likely will not run anymore. We keep it online as to document/showcase our journey.** 
 
 ### !! Be aware that script can have a long run-time !!
 Depending on the start and stop height that is defined, it might take a while before the script terminates. This is because all IPFS batches are pulled from the ETH anchor contract one by one. 
